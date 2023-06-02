@@ -1,0 +1,982 @@
+body {
+	overflow-x: hidden;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+
+/*========= Nav & Header Section =========*/
+
+.remove {
+    text-decoration: none;
+    color: #111;
+}
+
+.remove:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-bg {
+    background-image: url('../images/bg-hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.c-navbar {
+    position: absolute;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.c-navbar-nav {
+    gap: 1rem;
+}
+
+.c-navbar-nav .c-nav-link.active {
+    color: #a8FF35;
+}
+
+.c-nav-link {
+    font-size: 1.125rem;
+    color: #ffffff;
+}
+
+.c-nav-link:hover {
+    color: #A8FF35;
+}
+
+.c-nav-link:focus {
+    color: #A8FF35;
+}
+
+.nav-login-btn {
+    font-size: 1.125rem;
+    color: #ffffff;
+    border: transparent;
+    padding: 0.5rem 1.5rem;
+}
+
+.nav-login-btn:hover {
+    color: #a8FF35;
+}
+
+.nav-reg-btn {
+    font-size: 1.125rem;
+    color: #111111;
+    border: 2px solid #ffffff;
+    border-radius: 2.5rem;
+    background-color: #ffffff;
+    padding: 0.5rem 1.5rem;   
+}
+
+.nav-reg-btn:hover {
+    color: #a8ff35;
+    border: 2px solid #a8ff35;
+    background-color: transparent;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.navbar-dark .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+.navbar-toggler {
+    padding: 0;
+}
+
+/*========= Hamburger Menu =========*/
+
+.ham-menu{
+    display:flex;
+    flex-direction:column;
+    width:35px;
+    cursor:pointer;
+}
+   
+.ham-menu span{
+    background: #a8ff35;
+    border-radius:10px;
+    height:2px;
+    margin: 4px 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.one {
+    width:50%;
+}
+   
+.two {
+    width:100%;
+}
+    
+.three {
+    width:75%;   
+}
+   
+.ham-menu input[type="checkbox"]{
+     display:none;
+}
+   
+.ham-menu input[type="checkbox"]:checked ~ .one{
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(4px,1px)
+}
+   
+   
+.ham-menu input[type="checkbox"]:checked ~ .two{  
+    transform-origin:top;
+    transform:rotatez(-45deg)
+}
+   
+   
+.ham-menu input[type="checkbox"]:checked ~ .three{ 
+    transform-origin:bottom;
+    width:50%;
+    transform: translate(15px,-4px) rotatez(45deg);
+}
+  
+/*========= End Hamburger Menu =========*/
+
+
+
+.hero-text {
+    margin: 9rem 0 3rem;
+}
+
+.hero-text h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.hero-text p {
+    font-size: 1.125rem;
+    color: #8b8b8b;
+    margin: 1rem 0;
+}
+
+.hero-active-btn {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #111;
+    border: none;
+    border: 2px solid #a8FF35;
+    border-radius: 2.5rem;
+    background-color: #a8FF35;
+    padding: 0.9rem 1.5rem;
+}
+
+.hero-active-btn:hover {
+    color: #ffffff;
+    background-color: transparent; 
+}
+
+.fa-fire {
+    padding-left: 0.3rem;
+    color: #fbb741;
+}
+
+
+
+
+
+/*========= Content Section =========*/
+
+.content {
+    padding: 6rem 0 8rem;
+}
+
+.trend-text h1, span {
+    font-size: 4rem;
+    color: #111111;
+    font-weight: 700;
+}
+
+
+
+/*========= Platform Connect Section =========*/
+
+.platform {
+    background-color: #fafafa;
+    padding: 6rem 0;
+}
+
+.connect-heading {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #111111;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.social-navpill {
+    justify-content: center;
+    gap: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.social-navpill .pills-button.active {
+    background-color: #a8FF35;
+}
+
+.social-navpill .pills-button {
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.pill-twt-icon {
+    font-size: 3rem;
+    color: #00acee;
+}
+
+.pill-fb-icon {
+    font-size: 3rem;
+    color: #4267b2;
+}
+
+.pill-gl-icon {
+    font-size: 3rem;
+    color: #b200a7;
+}
+
+.pill-pint-icon {
+    font-size: 3rem;
+    color: #c8232c;
+}
+
+.pill-g-icon {
+    font-size: 3rem;
+    color: #db4a39;
+}
+
+.pill-spot-icon {
+    font-size: 3rem;
+    color: #1DB954;    
+}
+
+.pill-yt-icon {
+    font-size: 3rem;
+    color: #ff0000;
+}
+
+.pill-link-icon {
+    font-size: 3rem;
+    color: #0072b1;    
+}
+
+.tab-pane img {
+    padding: 3rem 3rem 0;
+}
+
+.view-more-btn {
+    font-size: 1.125rem;
+    font-weight: 700;
+    background-color: #111111;
+    color: #ffffff;
+    border: 2px solid #111111;
+    border-radius: 2.5rem;
+    padding: 0.8rem 1.8rem;
+    margin-top: 6rem;
+}
+
+.view-more-btn:hover {
+    background-color: transparent;
+    color: #111111;
+}
+
+
+
+/*========= Pricing Section =========*/
+
+
+.pricing-bg {
+    background-color: #111111;
+    padding: 7rem 0;
+}
+
+.pricing-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+/* Toggle Button */
+
+.pricing-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.pricing-toggle span {
+    font-size: 1.4rem;
+}
+
+.p-toggle {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin: 0 2rem;
+    position: relative;
+    -webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+    line-height: 0;
+}
+
+
+/* Before Checkbox to Toggle handle */
+.p-toggle::before {
+    content: "";
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: #a8FF35;
+    position: absolute;
+    display: block;
+    left: 5px;
+    top: 3px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+
+
+/* Surface of Toggle Button */
+.p-toggle::after {
+    content: "";
+    width: 75px;
+    height: 37px;
+    border-radius: 22px;
+    background-color: #ffffff;
+    display: inline-block;
+}
+
+.p-toggle:checked:before {
+    -webkit-transform: translateX(34px);
+    -ms-transform: translateX(35px);
+    transform: translateX(35px);
+  }
+
+.toggle-img {
+    padding-left: 1rem;
+}
+
+.pricing-plan input {
+    display: none;
+}
+
+.pricing-plan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.personal-label {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.label-heading {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 0.4rem;
+}
+
+.label-desc {
+    font-size: 1.125rem;
+    color: #111111
+}
+
+.border {
+    border: 1px solid #111111 !important;
+    margin: 1.5rem 0 2.5rem;
+}
+
+.price1 {
+    font-size: 4rem;
+    color: #111111;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+}
+
+.price2 {
+    font-size: 4rem;
+    color: #111111;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+}
+
+sub {
+    font-size: 1.125rem;
+    color: #111111;
+    bottom: 0;
+}
+
+.price-listing {
+    margin: 0rem;
+    padding: 0 0 6rem;
+}
+
+.fa-check {
+    padding-right: 1rem;
+}
+
+.price-listing li {
+    list-style-type: none;
+    font-size: 1.125rem;
+    color: #111111;
+    line-height: 2.5rem;
+}
+
+.label-btn {
+    font-size: 1.125rem;
+    font-weight: 600;
+    background-color: #a8ff35;
+    color: #111111;
+    border: 1px solid #a8ff35;
+    border-radius: 2.5rem;
+    padding: 0.8rem 4rem;
+}
+
+.trial-btn {
+    position: absolute;
+    bottom: 2rem;
+}
+
+.pricing-plan input:checked + label {
+    background-color: #a8FF35;
+}
+
+.pricing-plan input:checked + label .label-btn  {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.pricing-plan input:checked + label::after {
+	content: '\2713';
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 100%;
+	border: transparent;
+	background-color: #ffffff;
+	z-index: 999;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+/*========= Join Us Section =========*/
+
+
+.join-bg {
+    background-color: #A8FF35;
+    padding: 6rem 0;
+}
+
+.join-us-heading h1 {
+    font-size: 3.5rem;
+    color: #111111;
+    font-weight: 800;
+    margin-bottom: 5rem;
+}
+
+.sub-join {
+    opacity: 0.2;
+}
+
+.join-now-btn {
+    font-size: 1.125rem;
+    font-weight: 700;
+    background-color: #111111;
+    color: #ffffff;
+    border: 2px solid #111111;
+    border-radius: 2.5rem;
+    padding: 0.8rem 2rem;
+}
+
+.join-now-btn:hover {
+    background-color: transparent;
+    color: #111111;
+}
+
+
+
+/*========= Footer Section =========*/
+
+
+.footer-bg {
+    padding: 1rem 0;
+    background-color: #ffffff;
+}
+
+.footer-right ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 11px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 4rem;
+}
+
+.f-list {
+    padding: 0.33rem;
+}
+
+.f-list a{
+    text-decoration: none;
+    color: #111111;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+
+
+
+/*========= Start Media Queries =========*/
+
+@media only screen and (max-width: 1200px) {
+
+    .s-btn {
+        font-size: 0.9rem;
+    }
+
+    .crypto-btn .fa-twitter {
+        padding: 0 0.56rem 0 0.9rem;
+    }
+
+    .crypto-btn .fa-xmark {
+        padding: 0 0 0 1rem;
+        right: 15px;
+    }
+
+    .pinterest-btn .fa-pinterest {
+        padding: 0 0.56rem 0 0.9rem;
+    }
+
+    .pinterest-btn .fa-xmark {
+        padding: 0 0 0 1rem;
+        right: 15px;
+    }
+
+    .product-btn .fa-facebook {
+        padding: 0 0.56rem 0 0.9rem;
+    }
+
+    .product-btn .fa-xmark {
+        padding: 0 0 0 1rem;
+        right: 15px;
+    }
+
+    .elon-btn .fa-globe {
+        padding: 0 0.56rem 0 0.9rem;
+    }
+
+    .elon-btn .fa-xmark {
+        padding: 0 0 0 1rem;
+        right: 15px;
+    }
+
+    .footer-right ul {
+        gap: 1.5rem;
+    }
+
+    .social-navpill .pills-button {
+        padding: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .hero-img-btn img {
+        display: none;
+    }
+
+    .dark {
+        background-color: #000000;
+    }
+
+    .c-navbar-nav {
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    .me-2 {
+        margin-right: 0!important;
+    }
+
+    .nav-login-btn {
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .nav-reg-btn {
+        display: block;
+        margin: auto;
+    }
+
+    .newtab h1 {
+        font-size: 4rem;
+    }
+
+    .social-btns {
+        flex-direction: column;
+    }
+
+    .crypto-btn .fa-twitter {
+        padding: 0 1rem 0 0rem;
+    }
+
+    .s-btn {
+        font-size: 1.1rem;
+    }
+
+    .crypto-btn {
+        width: 48%;
+        margin: auto;
+        left: 0;
+    }
+
+    .crypto-btn .fa-xmark {
+        padding: 0 0 0 1rem;
+        right: 0px;
+    }
+
+    .pinterest-btn .fa-pinterest {
+        padding: 0 1rem 0 0rem;
+    }
+
+    .pinterest-btn {
+        width: 48%;
+        margin: auto;
+        top: 0;
+        left: 0;
+    }
+
+    .pinterest-btn .fa-xmark {
+        padding: 0 0 0 1rem;
+        right: 0px;
+    }
+
+    .product-btn .fa-facebook {
+        padding: 0 1rem 0 0rem;
+    }
+
+    .product-btn {
+        width: 48%;
+        margin: auto;
+        right: 0;
+    }
+
+    .product-btn .fa-xmark {
+        padding: 0 0 0 1rem;
+        right: 0px;
+    }
+
+    .elon-btn .fa-globe {
+        padding: 0 1rem 0 0rem;
+    }
+
+    .elon-btn {
+        width: 48%;
+        margin: auto;
+        top: 0;
+        right: 0;
+    }
+
+    .elon-btn .fa-xmark {
+        padding: 0 0 0 1rem;
+        right: 0px;
+    }    
+
+    .new-tab-bg {
+        padding: 3rem 4rem;
+    }
+
+    .newtab p {
+        margin: 4rem 3rem 0;
+    }
+
+    .trend-text h1, span {
+        font-size: 3rem;
+    }
+
+    .startup-heading {
+        font-size: 3rem;
+    }
+
+    .st-logo-bg {
+        padding: 2rem 1rem;
+    }
+
+    .connect-heading {
+        font-size: 3rem;
+    }
+
+    .tab-pane img {
+        padding: 3rem 0rem 0;
+        width: 100%;
+    }
+
+    .join-us-heading h1 {
+        font-size: 4rem;
+    }
+
+    .f-list a {
+        font-size: 0.9rem;
+    }
+
+    .footer-right ul {
+        gap: 0.9rem;
+    }
+
+}    
+
+
+@media only screen and (max-width: 767px) {
+    
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .social-btns {
+        margin: 8rem 0 8rem;
+    }
+
+    .crypto-btn {
+        width: 65%;
+    }
+
+    .pinterest-btn {
+        width: 65%;
+    }
+
+    .product-btn {
+        width: 65%;
+    }
+
+    .elon-btn {
+        width: 65%;
+    }
+
+    .newtab h1 {
+        font-size: 3rem;
+    }
+
+    .hide-tab-size {
+        display: none;
+    }
+
+    .r-tab-size {
+        display: block;
+        float: right;
+        padding-right: 3rem;
+    }
+
+    .l-tab-size {
+        display: block;
+        padding-left: 3rem;
+    }
+
+    .content {
+        padding: 6rem 0 3rem;
+    }
+
+    .st-logo-bg {
+        padding: 2rem 2rem;
+    }
+
+    .pill-twt-icon {
+        font-size: 2rem;
+    }
+
+    .pill-fb-icon {
+        font-size: 2rem;
+    }
+
+    .pill-gl-icon {
+        font-size: 2rem;
+    }
+
+    .pill-pint-icon {
+        font-size: 2rem;
+    }
+
+    .pill-g-icon {
+        font-size: 2rem;
+    }
+
+    .pill-spot-icon {
+        font-size: 2rem;
+    }
+
+    .pill-yt-icon {
+        font-size: 2rem;        
+    }
+
+    .pill-link-icon {
+        font-size: 2rem;
+    }
+
+    .pricing-title {
+        font-size: 3rem;
+    }
+
+    .tab-pane img {
+        padding: 3rem 1rem 0;
+    }
+
+    .join-us-heading h1 {
+        font-size: 3rem;
+
+    }
+
+    .footer-right ul {
+        padding: 2rem 0 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 0.5rem;
+    }
+
+    .f-list {
+        text-align: center;
+    }
+    
+    .footer-bg {
+        padding: 2rem 0;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+
+}    
+
+.company_info li {
+    list-style: none;
+}
+.company_info ul li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 2.5;
+
+}
+
+
+
+
+@media only screen and (max-width: 576px) {
+
+.hero-text h1 {
+    font-size: 2rem;
+}
+
+.crypto-btn {
+    width: 75%;
+}
+
+.pinterest-btn {
+    width: 75%;
+}
+
+.product-btn {
+    width: 75%;
+}
+
+.elon-btn {
+    width: 75%;
+}
+
+.newtab h1 {
+    font-size: 2rem;
+}
+
+.small-device {
+    width: 50%;
+}
+
+.new-tab-bg {
+    padding: 3rem 3rem;
+}
+
+.trend-text h1, span {
+    font-size: 2rem;
+}
+
+.startup-heading {
+    font-size: 2rem;
+}
+
+.pricing-title {
+    font-size: 2rem;
+}
+
+.pricing-toggle span {
+    font-size: 1rem;
+}
+
+.toggle-img {
+    display: none;
+}
+
+.join-us-heading h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.company_info {
+    margin-top: 35px;
+}
+
+
+.company_info ul {
+    padding: 0;
+}
+
+
+
+}
